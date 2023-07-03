@@ -50,6 +50,7 @@ RUN pacman -S --noconfirm \
 	openssh           \
 	python            \
 	python-pip        \
+	python-pipx       \
 	ripgrep           \
 	rsync             \
 	rust              \
