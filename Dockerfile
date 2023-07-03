@@ -41,6 +41,7 @@ RUN pacman -S --noconfirm \
 	github-cli        \
 	gnupg             \
 	htop              \
+	inetutils         \
 	linux-headers     \
 	man-db            \
 	man-pages         \
