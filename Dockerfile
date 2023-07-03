@@ -49,6 +49,7 @@ RUN pacman -S --noconfirm \
 	neovim            \
 	openssh           \
 	python            \
+	python-pip        \
 	ripgrep           \
 	rsync             \
 	rust              \
