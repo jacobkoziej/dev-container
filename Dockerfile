@@ -11,6 +11,7 @@ ARG GID=1000
 ARG SHELL=/bin/zsh
 ARG COUNTRY=US
 
+COPY dev-container       /dev-container
 COPY etc/pacman.conf     /etc/pacman.conf
 COPY etc/sudoers.d/wheel /etc/sudoers.d/wheel
 
@@ -77,4 +78,4 @@ RUN mkdir /home/$USER
 
 USER    $USER
 WORKDIR /home/$USER
-CMD     ["/bin/zsh", "--login"]
+CMD     ["/dev-container"]
