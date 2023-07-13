@@ -8,6 +8,7 @@ FROM archlinux/archlinux:latest
 ARG USER=dev
 ARG UID=1000
 ARG GID=1000
+ARG HOME=/home/$USER
 ARG SHELL=/bin/zsh
 ARG COUNTRY=US
 
@@ -67,15 +68,16 @@ RUN groupadd       \
 	--gid $GID \
 	$USER      \
 	;
-RUN useradd             \
-	--gid    $GID   \
-	--groups wheel  \
-	--shell  $SHELL \
-	--uid    $UID   \
-	$USER           \
+RUN useradd               \
+	--gid      $GID   \
+	--groups   wheel  \
+	--shell    $SHELL \
+	--uid      $UID   \
+	--home-dir $HOME  \
+	$USER             \
 	;
-RUN mkdir /home/$USER
+RUN mkdir -p $HOME
 
 USER    $USER
-WORKDIR /home/$USER
+WORKDIR $HOME
 CMD     ["/dev-container"]
