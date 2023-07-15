@@ -32,6 +32,7 @@ RUN pacman -S --noconfirm \
 	bat               \
 	binutils          \
 	clang             \
+	cowsay            \
 	direnv            \
 	exa               \
 	fd                \
