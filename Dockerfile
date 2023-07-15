@@ -48,6 +48,7 @@ RUN pacman -S --noconfirm \
 	linux-headers     \
 	man-db            \
 	man-pages         \
+	mdbook            \
 	mosh              \
 	neovim            \
 	openssh           \
