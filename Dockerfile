@@ -63,6 +63,7 @@ RUN pacman -S --noconfirm \
 	shfmt             \
 	sudo              \
 	tmux              \
+	unzip             \
 	valgrind          \
 	zsh               \
 	;
