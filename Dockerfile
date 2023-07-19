@@ -45,6 +45,7 @@ RUN pacman -S --noconfirm \
 	gnupg             \
 	htop              \
 	inetutils         \
+	ipython           \
 	linux-headers     \
 	man-db            \
 	man-pages         \
